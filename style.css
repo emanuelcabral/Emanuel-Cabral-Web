@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.banner{
+    background-color: springgreen;
+    width: 100%;
+    min-height: 100vh;
+}
+
+h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 75px;
+}
+
+.navbar{
+    width: 100%;
+    height: 120px;
+}
+
+/* 🔥 NAV CENTRADO */
+.navbar-nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar-brand{
+    color: #fff !important;
+    font-weight: bold;
+}
+
+.nav-link{
+    color: #fff !important;
+}
+
+.nav-link i{
+    color: #333;
+}
+
+/* 🔥 IDIOMAS */
+.idiomas{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.idiomas img{
+    width: 28px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.idiomas img:hover{
+    transform: scale(1.1);
+}
+
+/* CONTENIDO */
+.call{
+    width: 70%;
+}
+
+.call-left{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.banner .call img{
+    height: 500px;
+}
+
+.banner span{
+    color: rgb(4, 134, 241);
+}
+
+.banner p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.call-left a{
+    background-color: rgb(4, 134, 241);
+    padding: 10px 40px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 25px;
+    width: 50%;
+    text-align: center;
+}
+
+.canvasParticles-two {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  /* z-index: 1 !important; */
+}
