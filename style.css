@@ -1,29 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700;900&display=swap');
 
+/* -------------------- RESET -------------------- */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* -------------------- BODY -------------------- */
+body{
+    font-family: "Poppins", sans-serif;
+    line-height: 1.6;
+}
+
+/* -------------------- BANNER -------------------- */
 .banner{
     background-color: springgreen;
     width: 100%;
     min-height: 100vh;
+    position: relative;
 }
 
+/* H1 PRINCIPAL */
 h1{
     font-family: "Poppins", sans-serif;
     font-weight: bold;
     font-size: 75px;
 }
 
+/* -------------------- NAVBAR -------------------- */
 .navbar{
     width: 100%;
     height: 120px;
 }
 
-/* 🔥 NAV CENTRADO */
+/* NAV CENTRADO */
 .navbar-nav{
     width: 100%;
     display: flex;
@@ -45,7 +56,10 @@ h1{
     color: #333;
 }
 
-/* 🔥 IDIOMAS */
+.nav-link:nth-child(1){
+    font-family: sans-serif;
+}
+/* -------------------- IDIOMAS -------------------- */
 .idiomas{
     display: flex;
     align-items: center;
@@ -56,14 +70,14 @@ h1{
     width: 28px;
     height: auto;
     cursor: pointer;
-    transition: transform 0.2s ease;
+    transition: transform 0.2s;
 }
 
 .idiomas img:hover{
     transform: scale(1.1);
 }
 
-/* CONTENIDO */
+/* -------------------- CALL SECTION -------------------- */
 .call{
     width: 70%;
 }
@@ -84,27 +98,178 @@ h1{
 }
 
 .banner p{
-    font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 25px;
 }
 
 .call-left a{
     background-color: rgb(4, 134, 241);
-    padding: 10px 40px;
+    padding: 12px 45px;
     border-radius: 10px;
     text-decoration: none;
     color: #fff;
     font-weight: bold;
-    font-size: 25px;
-    width: 50%;
+    font-size: 22px;
+    display: inline-block;
+    transition: all 0.3s ;
+    width: 200px;
     text-align: center;
 }
 
+.call-left a:hover{
+    background: linear-gradient(135deg, rgb(4,134,241), #00c6ff);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(4,134,241,0.4);
+}
+
+/* -------------------- CANVAS -------------------- */
 .canvasParticles-two {
   position: absolute;
   top: 0;
   right: 0;
   width: 100%;
-  /* z-index: 1 !important; */
+}
+
+/* -------------------- ABOUT SECTION PROFESIONAL -------------------- */
+.about{
+    padding: 120px 20px;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+}
+
+.about-wrapper{
+    max-width: 900px;
+    background: rgba(255,255,255,0.05);
+    padding: 60px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+/* HEADER */
+.about-header{
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.about-header h3{
+    color: #aaa;
+    font-size: 16px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.about-header h2{
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.about-header h2 span{
+    color: rgb(4, 134, 241);
+}
+
+.about-header h4{
+    color: rgb(4, 134, 241);
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+/* LÍNEA DECORATIVA */
+.about-header::after{
+    content: "";
+    width: 60px;
+    height: 3px;
+    background: rgb(4, 134, 241);
+    display: block;
+    margin-top: 15px;
+    border-radius: 2px;
+}
+
+/* CONTENIDO */
+.about-content p{
+    line-height: 1.8;
+    color: #cfcfcf;
+    font-size: 16px;
+    white-space: pre-line;
+    margin-bottom: 25px;
+}
+
+/* BOTÓN CV */
+.about-footer{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 30px;
+}
+
+.about-footer a{
+    background: linear-gradient(135deg, rgb(4,134,241), #00c6ff);
+    padding: 12px 35px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: all 0.3s ;
+}
+
+.about-footer a:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(4,134,241,0.4);
+}
+
+/* -------------------- RESPONSIVE -------------------- */
+@media (max-width: 992px){
+    .banner .call img{
+        height: 400px;
+    }
+
+    .call-left a{
+        font-size: 20px;
+        padding: 10px 35px;
+    }
+
+    .about-wrapper{
+        padding: 40px 20px;
+    }
+}
+
+@media (max-width: 768px){
+    h1{
+        font-size: 55px;
+    }
+
+    .banner .call img{
+        height: 300px;
+    }
+}
+
+@media (max-width: 576px){
+    h1{
+        font-size: 45px;
+    }
+
+    .banner p{
+        font-size: 20px;
+    }
+
+    .about-header h2{
+        font-size: 30px;
+    }
+
+    .about-header h4{
+        font-size: 18px;
+    }
+
+    .call-left a{
+        font-size: 18px;
+        padding: 8px 25px;
+    }
+
+    .about-content p{
+        font-size: 14px;
+    }
 }
