@@ -1148,6 +1148,10 @@ h1{
     margin-bottom: 10px;
 }
 
+.stat-card h3::before{
+    content: "+";
+}
+
 .stat-card span{
     color: #ccc;
     font-size: 14px;
