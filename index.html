@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/perfil1.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
@@ -11,6 +12,7 @@
 </head>
 <body>
 
+<!--------------------------------- HERO INICIA -------------------------------------->
 <div class="container-fluid banner">
     <canvas class="canvasParticles-two" width="1536" height="243"></canvas>
     <nav class="navbar navbar-expand-sm">
@@ -32,16 +34,16 @@
                         <a class="nav-link" href="#about">Acerca de Mí</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Tecnologías</a>
+                        <a class="nav-link" href="#stack">Tecnologías</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Proyectos</a>
+                        <a class="nav-link" href="#portfolio">Proyectos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Testimonios</a>
+                        <a class="nav-link" href="#testimonios">Testimonios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Trayectoria</a>
+                        <a class="nav-link" href="#timeline">Trayectoria</a>
                     </li>
 
                     <!-- REDES -->
@@ -75,7 +77,8 @@
         <div class="row">
             <div class="col-sm-6 call-left">
                 <h1>Emanuel <span>Cabral</span></h1>
-                <p>Desarrollador Web - Profesor - IA</p>
+                <!-- <p>Desarrollador Web - Profesor - IA</p> -->
+                 <p id="text"></p>
                 <a href="#">Contacto</a>
             </div>
             <div class="col-sm-6">
@@ -85,16 +88,10 @@
     </div>
 
 </div>
+<!--------------------------------- HERO FIN ----------------------------------------->
 
-
-
-
-
-
-
-
-
-<section class="about-me">
+<!--------------------------------- ABOUT ME INICIA ---------------------------------->
+<section class="about-me" id="about">
 
   <div class="about-me-wrapper">
 
@@ -161,17 +158,10 @@
   </div>
 
 </section>
+<!--------------------------------- ABOUT ME FIN ------------------------------------->
 
-
-
-
-
-
-
-
-
-
-<section class="tech">
+<!--------------------------------- STACK INICIO ------------------------------------->
+<section class="tech" id="stack">
     <div class="tech-wrapper">
 
         <div class="tech-header">
@@ -221,15 +211,9 @@
 
     </div>
 </section>
+<!--------------------------------- STACK FIN ---------------------------------------->
 
-
-
-
-
-
-
-
-
+<!--------------------------------- PORTFOLIO INICIA --------------------------------->
 <section class="portfolio" id="portfolio">
   <div class="portfolio-wrapper">
 
@@ -244,27 +228,27 @@
       <div class="portfolio-grid">
         <!-- Proyecto 1 -->
         <div class="portfolio-item">
-          <img src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" alt="Proyecto 1" loading="lazy">
-          <h4>Proyecto 1</h4>
-          <p>Breve descripción del proyecto número 1.</p>
-          <a href="#" target="_blank">Ver Proyecto</a>
+          <img src="./img/portfolio/Pyme Finance.gif" alt="Proyecto 1" loading="lazy">
+          <h4>Pyme Finance</h4>
+          <p>Sitio web para una PYME financiera, desarrollado con tecnologías web estándar y recursos multimedia. El objetivo es ofrecer una plataforma clara, adaptable y profesional para la presentación de servicios financieros.</p>
+          <a href="https://codercabral.github.io/martingarcia/" target="_blank">Ver Proyecto</a>
         </div>
         <div class="portfolio-item">
-          <img src="https://media.giphy.com/media/l0HlBO7eyXzSZkJri/giphy.gif" alt="Proyecto 2" loading="lazy">
-          <h4>Proyecto 2</h4>
-          <p>Breve descripción del proyecto número 2.</p>
-          <a href="#" target="_blank">Ver Proyecto</a>
+          <img src="./img/portfolio/ConciencIA Digital.gif" alt="Proyecto 2" loading="lazy">
+          <h4>ConciencIA Digital</h4>
+          <p>ConciencIA Digital es un blog de noticias sobre Inteligencia Artificial que comparte novedades, avances y temas clave del sector, incluyendo su impacto en la sociedad, oportunidades y desafíos.</p>
+          <a href="https://emanuelcabral.github.io/ConciencIA-Digital/" target="_blank">Ver Proyecto</a>
         </div>
         <div class="portfolio-item">
-          <img src="https://media.giphy.com/media/3o7qE1YN7aBOFPRw8E/giphy.gif" alt="Proyecto 3" loading="lazy">
-          <h4>Proyecto 3</h4>
-          <p>Breve descripción del proyecto número 3.</p>
-          <a href="#" target="_blank">Ver Proyecto</a>
+          <img src="./img/portfolio/gjg.gif" alt="Proyecto 3" loading="lazy">
+          <h4>Gustavo j. Gonzalez</h4>
+          <p>Kinesiología GG es un sitio web profesional donde el kinesiólogo se presenta y muestra sus servicios, experiencia y enfoque de trabajo en la rehabilitación y el cuidado del movimiento humano.</p>
+          <a href="https://emanuelcabral.github.io/kinesiologia-gg/" target="_blank">Ver Proyecto</a>
         </div>
         <div class="portfolio-item">
-          <img src="https://media.giphy.com/media/3o7TKtnuHOHHUjR38Y/giphy.gif" alt="Proyecto 4" loading="lazy">
-          <h4>Proyecto 4</h4>
-          <p>Breve descripción del proyecto número 4.</p>
+          <img src="./img/portfolio/mariemk.gif" alt="Proyecto 4" loading="lazy">
+          <h4>Marie-MaryKay</h4>
+          <p>Marie MaryKay, un proyecto web creado para una asesora de imagen y belleza que busca darse a conocer y compartir su propuesta de valor de manera clara, elegante y profesional.</p>
           <a href="#" target="_blank">Ver Proyecto</a>
         </div>
       </div>
@@ -272,28 +256,28 @@
       <div class="portfolio-grid">
         <!-- Proyecto 5 -->
         <div class="portfolio-item">
-          <img src="https://media.giphy.com/media/l0Exk8EUzSLsrErEQ/giphy.gif" alt="Proyecto 5" loading="lazy">
-          <h4>Proyecto 5</h4>
-          <p>Breve descripción del proyecto número 5.</p>
-          <a href="#" target="_blank">Ver Proyecto</a>
+          <img src="./img/portfolio/cfp402.gif" alt="Proyecto 5" loading="lazy">
+          <h4>CFP 402</h4>
+          <p>Proyecto Educativo sobre un centro de formacion profesional</p>
+          <a href="https://emanuelcabral.github.io/cfp402/" target="_blank">Ver Proyecto</a>
         </div>
         <div class="portfolio-item">
-          <img src="https://media.giphy.com/media/3o6ZsYjv2b9gX0n6F6/giphy.gif" alt="Proyecto 6" loading="lazy">
-          <h4>Proyecto 6</h4>
-          <p>Breve descripción del proyecto número 6.</p>
-          <a href="#" target="_blank">Ver Proyecto</a>
+          <img src="./img/portfolio/yourdreamsweb.gif" alt="Proyecto 6" loading="lazy">
+          <h4>yourdreamswebsite</h4>
+          <p>Es una web orientada a la promoción y venta de servicios de desarrollo web, diseñada como landing page para presentar ofertas, captar clientes y facilitar el contacto comercial.</p>
+          <a href="https://emanuelcabral.github.io/yourdreamswebsite/" target="_blank">Ver Proyecto</a>
         </div>
         <div class="portfolio-item">
-          <img src="https://media.giphy.com/media/xT0xeJpnrWC4XWblEk/giphy.gif" alt="Proyecto 7" loading="lazy">
-          <h4>Proyecto 7</h4>
-          <p>Breve descripción del proyecto número 7.</p>
-          <a href="#" target="_blank">Ver Proyecto</a>
+          <img src="./img/portfolio/burgerplace.gif" alt="Proyecto 7" loading="lazy">
+          <h4>Burger Place</h4>
+          <p>Proyecto educativo de construcción de sitio llamado Burger Place</p>
+          <a href="https://emanuelcabral.github.io/burger_place/" target="_blank">Ver Proyecto</a>
         </div>
         <div class="portfolio-item">
-          <img src="https://media.giphy.com/media/3o7TKL3Yj7J8k28myE/giphy.gif" alt="Proyecto 8" loading="lazy">
-          <h4>Proyecto 8</h4>
-          <p>Breve descripción del proyecto número 8.</p>
-          <a href="#" target="_blank">Ver Proyecto</a>
+          <img src="./img/portfolio/timeline.gif" alt="Proyecto 8" loading="lazy">
+          <h4>Time line</h4>
+          <p>Timeline Profesional es una página web que presenta una línea de tiempo interactiva del recorrido profesional, desarrollada con HTML, CSS y JavaScript.</p>
+          <a href="https://emanuelcabral.github.io/TimeLine/" target="_blank">Ver Proyecto</a>
         </div>
       </div>
     </div>
@@ -303,89 +287,74 @@
       <div class="portfolio-grid">
         <!-- Proyecto 9-12 -->
         <div class="portfolio-item">
-          <img src="https://media.giphy.com/media/l0Exk8EUzSLsrErEQ/giphy.gif" alt="Proyecto 9" loading="lazy">
-          <h4>Proyecto 9</h4>
-          <p>Breve descripción del proyecto número 9.</p>
-          <a href="#" target="_blank">Ver Proyecto</a>
+          <img src="./img/portfolio/tecnomarema.gif" alt="Proyecto 9" loading="lazy">
+          <h4>Tecno Marema</h4>
+          <p>TecnoMarema es una web de una institución educativa que ofrece cursos de tecnología, orientada a la formación y el aprendizaje mediante contenidos y recursos digitales.</p>
+          <a href="https://emanuelcabral.github.io/TecnoMarema/" target="_blank">Ver Proyecto</a>
         </div>
         <div class="portfolio-item">
-          <img src="https://media.giphy.com/media/3o6ZsYjv2b9gX0n6F6/giphy.gif" alt="Proyecto 10" loading="lazy">
-          <h4>Proyecto 10</h4>
-          <p>Breve descripción del proyecto número 10.</p>
-          <a href="#" target="_blank">Ver Proyecto</a>
+          <img src="./img/portfolio/slider.gif" alt="Proyecto 10" loading="lazy">
+          <h4>Slider(Hecho solo con CSS)</h4>
+          <p>es un carrusel de imágenes interactivo desarrollado únicamente con HTML y CSS, que permite navegar entre imágenes mediante scroll y puntos indicadores animados, sin uso de JavaScript.</p>
+          <a href="https://emanuelcabral.github.io/slider1/" target="_blank">Ver Proyecto</a>
         </div>
         <div class="portfolio-item">
-          <img src="https://media.giphy.com/media/xT0xeJpnrWC4XWblEk/giphy.gif" alt="Proyecto 11" loading="lazy">
-          <h4>Proyecto 11</h4>
-          <p>Breve descripción del proyecto número 11.</p>
-          <a href="#" target="_blank">Ver Proyecto</a>
+          <img src="./img/portfolio/memory-game.gif" alt="Proyecto 11" loading="lazy">
+          <h4>Memory Game</h4>
+          <p>Es un proyecto educativo de un juego que está hecho con HTML, CSS y JavaScript, e incluye sonidos, animaciones, temporizador y contador de movimientos, ofreciendo una experiencia interactiva y profesional</p>
+          <a href="https://emanuelcabral.github.io/memory-game/" target="_blank">Ver Proyecto</a>
         </div>
         <div class="portfolio-item">
-          <img src="https://media.giphy.com/media/3o7TKL3Yj7J8k28myE/giphy.gif" alt="Proyecto 12" loading="lazy">
-          <h4>Proyecto 12</h4>
-          <p>Breve descripción del proyecto número 12.</p>
-          <a href="#" target="_blank">Ver Proyecto</a>
+          <!-- <img src="https://media.giphy.com/media/3o7TKL3Yj7J8k28myE/giphy.gif" alt="Proyecto 12" loading="lazy"> -->
+          <img src="./img/portfolio/favicon.gif" alt="Proyecto 12" loading="lazy">
+          <h4>Favicon Generator</h4>
+          <p>Genera imagenes convertidas a favicones y el codigo html</p>
+          <a href="https://emanuelcabral.github.io/generador-de-favicones/" target="_blank">Ver Proyecto</a>
         </div>
       </div>
 
       <div class="portfolio-grid">
         <!-- Proyecto 13-16 -->
         <div class="portfolio-item">
-          <img src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" alt="Proyecto 13" loading="lazy">
-          <h4>Proyecto 13</h4>
-          <p>Breve descripción del proyecto número 13.</p>
-          <a href="#" target="_blank">Ver Proyecto</a>
+          <img src="./img/portfolio/adivina-el-numero.gif" alt="Proyecto 13" loading="lazy">
+          <h4>Adivina el Número</h4>
+          <p>Es un proyecto educativo de una web interactiva donde el usuario intenta adivinar un número secreto entre 1 y 100, creado con HTML , CSS y JS.</p>
+          <a href="https://emanuelcabral.github.io/adivina-el-numero/" target="_blank">Ver Proyecto</a>
         </div>
         <div class="portfolio-item">
-          <img src="https://media.giphy.com/media/l0HlBO7eyXzSZkJri/giphy.gif" alt="Proyecto 14" loading="lazy">
-          <h4>Proyecto 14</h4>
-          <p>Breve descripción del proyecto número 14.</p>
-          <a href="#" target="_blank">Ver Proyecto</a>
+          <img src="./img/portfolio/imc.gif" alt="Proyecto 14" loading="lazy">
+          <h4>Calcular el IMC</h4>
+          <p>Es un proyecto educativo de una herramienta web interactiva que permite calcular el Índice de Masa Corporal (IMC) en función del peso y la altura del usuario</p>
+          <a href="https://emanuelcabral.github.io/calcular-IMC/" target="_blank">Ver Proyecto</a>
         </div>
         <div class="portfolio-item">
-          <img src="https://media.giphy.com/media/3o7qE1YN7aBOFPRw8E/giphy.gif" alt="Proyecto 15" loading="lazy">
-          <h4>Proyecto 15</h4>
-          <p>Breve descripción del proyecto número 15.</p>
-          <a href="#" target="_blank">Ver Proyecto</a>
+          <img src="./img/portfolio/tateti.gif" alt="Proyecto 15" loading="lazy">
+          <h4>Tateti</h4>
+          <p>Es un proyecto educativo de un juego polular conocido como Tateti (Tres en Raya), juego interactivo, desarrollado con HTML, CSS y JavaScript</p>
+          <a href="https://emanuelcabral.github.io/tateti/" target="_blank">Ver Proyecto</a>
         </div>
         <div class="portfolio-item">
-          <img src="https://media.giphy.com/media/3o7TKtnuHOHHUjR38Y/giphy.gif" alt="Proyecto 16" loading="lazy">
-          <h4>Proyecto 16</h4>
-          <p>Breve descripción del proyecto número 16.</p>
-          <a href="#" target="_blank">Ver Proyecto</a>
+          <img src="./img/portfolio/piedra-papel-tijera.gif" alt="Proyecto 16" loading="lazy">
+          <h4>Piedra Papel y Tijera</h4>
+          <p>Es un proyecto educativo de un juego clásico, de Piedra, Papel y Tijera desarrollado con HTML, CSS y JavaScript</p>
+          <a href="https://emanuelcabral.github.io/piedra-papel-y-tijera/" target="_blank">Ver Proyecto</a>
         </div>
       </div>
     </div>
 
   </div>
 </section>
+<!--------------------------------- PORTFOLIO FIN ------------------------------------>
 
+<!--------------------------------- TESTIMONIAL INICIA ------------------------------->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<section class="testimonials">
+<section class="testimonials" id="testimonios">
 
   <div class="testimonials-wrapper">
 
     <div class="testimonials-header">
       <h3>TESTIMONIALS</h3>
-      <h2>Lo que dicen <span>de mí</span></h2>
+      <h2>Resultados que hablan<span> por sí solos</span></h2>
       <p>Opiniones de clientes y colegas</p>
     </div>
 
@@ -403,9 +372,9 @@
             </p>
 
             <div class="testimonial-user">
-              <img src="https://i.pravatar.cc/100?img=12" alt="user">
+              <img src="./img/martin garcia.jpeg" alt="user">
               <div>
-                <h4>Martin P.</h4>
+                <h4>Martin Garcia</h4>
                 <span>Cliente</span>
               </div>
             </div>
@@ -418,14 +387,14 @@
           <div class="testimonial-card">
 
             <p>
-              “Muy buen desarrollador full stack. Supo transformar nuestra idea en una web moderna y funcional.”
+              “Excelente experiencia trabajar con Emanuel, fui parte del equipo en Coderhouse en el que se desempeño como profesor cumpliendo a la perfección el rol”
             </p>
 
             <div class="testimonial-user">
-              <img src="https://i.pravatar.cc/100?img=32" alt="user">
+              <img src="./img/federico lucero.jpeg" alt="user">
               <div>
-                <h4>Juana Pérez</h4>
-                <span>Startup Founder</span>
+                <h4>Federico Lucero</h4>
+                <span>Tutor de Desarrollo web</span>
               </div>
             </div>
 
@@ -437,19 +406,116 @@
           <div class="testimonial-card">
 
             <p>
-              “Diseño impecable y atención al detalle. Sin duda volvería a trabajar con él.”
+              “Emanuel fue mi primer profesor en Numen Academy, con él asenté las bases de frontend. Sus clases fueron excelentes, aprendí de manera didáctica y dinámica conceptos de HTML, CSS, Flexbox, Grid, animaciones y Bootstrap, ademas de compartirnos herramientas para usar en los proyectos. Siempre estuvo predispuesto a resolver dudas propias y del grupo, como así también en darnos un freedback constructivo ante los trabajos prácticos propuestos. Excelente docente. Uno de los motivos por que recomiendo Numen Academy. Siempre agradecido.”
             </p>
 
             <div class="testimonial-user">
-              <img src="https://i.pravatar.cc/100?img=45" alt="user">
+              <img src="./img/ivan vila.jpeg" alt="user">
               <div>
-                <h4>Laura Fernández</h4>
-                <span>Diseñadora UX</span>
+                <h4>Iván José Vila</h4>
+                <span>Estudiante</span>
               </div>
             </div>
 
           </div>
         </div>
+
+        <!-- TESTIMONIO 4 -->
+        <div class="carousel-item">
+          <div class="testimonial-card">
+
+            <p>
+              “Hola profesor, ante todo darle las GRACIAS por tan buenas clases. La verdad que ha sido uno de los mejores profesores que me ha tocado en Coder, estoy muy contenta con los avances que he visto en mi y ha sido en gran parte por la calidad de su enseñanza. Se nota que le gusta transmitir sus conocimientos y tiene mucha paciencia. Estoy muy agradecida. Espero que me toque en otro curso :)”
+            </p>
+
+            <div class="testimonial-user">
+              <img src="./img/avatar.svg" alt="user">
+              <div>
+                <h4>Clara Villalba</h4>
+                <span>Estudiante</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- TESTIMONIO 5 -->
+        <div class="carousel-item">
+          <div class="testimonial-card">
+
+            <p>
+              “Excelente el profesor. Te mantiene entretenido y prestando atención en clase. Le mete mucha onda, lo que te permite que si estas cansado por el horario no te pierdas.”
+            </p>
+
+            <div class="testimonial-user">
+              <img src="./img/avatar.svg" alt="user">
+              <div>
+                <h4>Florencia P.</h4>
+                <span>Estudiante</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- TESTIMONIO 6 -->
+        <div class="carousel-item">
+          <div class="testimonial-card">
+
+            <p>
+              “Muy buen profesor ! Es la tercera vez que curso este curso y al primero que le entiendo!”
+            </p>
+
+            <div class="testimonial-user">
+              <img src="./img/avatar.svg" alt="user">
+              <div>
+                <h4>Carlos J.</h4>
+                <span>Estudiante</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- TESTIMONIO 7 -->
+        <div class="carousel-item">
+          <div class="testimonial-card">
+
+            <p>
+              “Me encantó. Dejé de cursar por un tiempo en Coder, pero nunca tuve una clase tan dinámica y bien explicada. ¡Excelente trabajo!”
+            </p>
+
+            <div class="testimonial-user">
+              <img src="./img/avatar.svg" alt="user">
+              <div>
+                <h4>Esteban B.</h4>
+                <span>Estudiante</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        
+        <!-- TESTIMONIO 8 -->
+        <div class="carousel-item">
+          <div class="testimonial-card">
+
+            <p>
+              “La verdad que Emanuel es un genio y gran profe se preocupa por que entendamos”
+            </p>
+
+            <div class="testimonial-user">
+              <img src="./img/avatar.svg" alt="user">
+              <div>
+                <h4>Eva S.</h4>
+                <span>Estudiante</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
 
       </div>
 
@@ -467,15 +533,11 @@
   </div>
 
 </section>
+<!--------------------------------- TESTIMONIAL FIN ---------------------------------->
 
+<!--------------------------------- TIMELINE INICIA ---------------------------------->
 
-
-
-
-
-
-
-<section class="timeline-section">
+<section class="timeline-section" id="timeline">
 
   <div class="timeline-wrapper">
 
@@ -487,8 +549,7 @@
 
     <div class="timeline">
 
-
-      <!-- ITEM 0 -->
+      <!-- ITEM 1 -->
       <div class="timeline-item left">
         <div class="timeline-content">
           <span class="tag exp">EXPERIENCIA</span>
@@ -498,7 +559,7 @@
         </div>
       </div>
 
-            <!-- ITEM 9 -->
+      <!-- ITEM 2 -->
       <div class="timeline-item right">
         <div class="timeline-content">
           <span class="tag edu">EDUCACIÓN</span>
@@ -508,7 +569,7 @@
         </div>
       </div>
 
-      <!-- ITEM 1 -->
+      <!-- ITEM 3 -->
       <div class="timeline-item left">
         <div class="timeline-content">
           <span class="tag exp">EXPERIENCIA</span>
@@ -518,7 +579,7 @@
         </div>
       </div>
 
-      <!-- ITEM 2 -->
+      <!-- ITEM 4 -->
       <div class="timeline-item right">
         <div class="timeline-content">
           <span class="tag exp">EXPERIENCIA</span>
@@ -532,9 +593,7 @@ Además, enseño el uso de herramientas esenciales para el desarrollo profesiona
         </div>
       </div>
 
-
-
-    <!-- ITEM 3 -->
+    <!-- ITEM 4 -->
       <div class="timeline-item left">
         <div class="timeline-content">
           <span class="tag exp">EXPERIENCIA</span>
@@ -544,8 +603,7 @@ Además, enseño el uso de herramientas esenciales para el desarrollo profesiona
         </div>
       </div>
 
-
-          <!-- ITEM 4 -->
+      <!-- ITEM 5 -->
       <div class="timeline-item right">
         <div class="timeline-content">
           <span class="tag exp">EXPERIENCIA</span>
@@ -556,7 +614,7 @@ Además, enseño el uso de herramientas esenciales para el desarrollo profesiona
       </div>
 
 
-            <!-- ITEM 6 -->
+      <!-- ITEM 6 -->
       <div class="timeline-item left">
         <div class="timeline-content">
           <span class="tag exp">EXPERIENCIA</span>
@@ -566,7 +624,7 @@ Además, enseño el uso de herramientas esenciales para el desarrollo profesiona
         </div>
       </div>
 
-      <!-- ITEM 5 -->
+      <!-- ITEM 7 -->
       <div class="timeline-item left">
         <div class="timeline-content">
           <span class="tag exp">EXPERIENCIA</span>
@@ -580,9 +638,7 @@ Además de dictar clases y acompañar a tutores, realizo las correcciones de los
         </div>
       </div>
 
-
-
-            <!-- ITEM 7 -->
+      <!-- ITEM 8 -->
       <div class="timeline-item right">
         <div class="timeline-content">
           <span class="tag edu">EDUCACIÓN</span>
@@ -592,9 +648,7 @@ Además de dictar clases y acompañar a tutores, realizo las correcciones de los
         </div>
       </div>
 
-
-
-            <!-- ITEM 5 -->
+      <!-- ITEM 9 -->
       <div class="timeline-item left">
         <div class="timeline-content">
           <span class="tag exp">EXPERIENCIA</span>
@@ -606,7 +660,7 @@ Además de dictar clases y acompañar a tutores, realizo las correcciones de los
         </div>
       </div>
 
-            <!-- ITEM 9 -->
+      <!-- ITEM 10 -->
       <div class="timeline-item right">
         <div class="timeline-content">
           <span class="tag edu">EDUCACIÓN</span>
@@ -616,7 +670,7 @@ Además de dictar clases y acompañar a tutores, realizo las correcciones de los
         </div>
       </div>
 
-                  <!-- ITEM 9 -->
+      <!-- ITEM 11 -->
       <div class="timeline-item right">
         <div class="timeline-content">
           <span class="tag edu">EDUCACIÓN</span>
@@ -626,7 +680,7 @@ Además de dictar clases y acompañar a tutores, realizo las correcciones de los
         </div>
       </div>
 
-            <!-- ITEM 9 -->
+      <!-- ITEM 12 -->
       <div class="timeline-item right">
         <div class="timeline-content">
           <span class="tag edu">EDUCACIÓN</span>
@@ -636,8 +690,7 @@ Además de dictar clases y acompañar a tutores, realizo las correcciones de los
         </div>
       </div>
 
-
-      <!-- ITEM 9 -->
+      <!-- ITEM 13 -->
       <div class="timeline-item right">
         <div class="timeline-content">
           <span class="tag edu">EDUCACIÓN</span>
@@ -647,7 +700,7 @@ Además de dictar clases y acompañar a tutores, realizo las correcciones de los
         </div>
       </div>
 
-            <!-- ITEM 5 -->
+      <!-- ITEM 14 -->
       <div class="timeline-item left">
         <div class="timeline-content">
           <span class="tag exp">EXPERIENCIA</span>
@@ -658,7 +711,7 @@ Además de dictar clases y acompañar a tutores, realizo las correcciones de los
         </div>
       </div>
 
-            <!-- ITEM 9 -->
+      <!-- ITEM 15 -->
       <div class="timeline-item right">
         <div class="timeline-content">
           <span class="tag edu">EDUCACIÓN</span>
@@ -668,7 +721,7 @@ Además de dictar clases y acompañar a tutores, realizo las correcciones de los
         </div>
       </div>
 
-      <!-- ITEM 9 -->
+      <!-- ITEM 16 -->
       <div class="timeline-item right">
         <div class="timeline-content">
           <span class="tag edu">EDUCACIÓN</span>
@@ -678,7 +731,7 @@ Además de dictar clases y acompañar a tutores, realizo las correcciones de los
         </div>
       </div>
 
-            <!-- ITEM 8 -->
+      <!-- ITEM 17 -->
       <div class="timeline-item right">
         <div class="timeline-content">
           <span class="tag edu">EDUCACIÓN</span>
@@ -688,7 +741,7 @@ Además de dictar clases y acompañar a tutores, realizo las correcciones de los
         </div>
       </div>
 
-      <!-- ITEM 5 -->
+      <!-- ITEM 18 -->
       <div class="timeline-item left">
         <div class="timeline-content">
           <span class="tag exp">EXPERIENCIA</span>
@@ -699,8 +752,7 @@ Además de dictar clases y acompañar a tutores, realizo las correcciones de los
         </div>
       </div>
 
-
-      <!-- ITEM 5 -->
+      <!-- ITEM 19 -->
       <div class="timeline-item left">
         <div class="timeline-content">
           <span class="tag exp">EXPERIENCIA</span>
@@ -711,21 +763,7 @@ Además de dictar clases y acompañar a tutores, realizo las correcciones de los
         </div>
       </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <!-- ITEM 9 -->
+      <!-- ITEM 20 -->
       <div class="timeline-item right">
         <div class="timeline-content">
           <span class="tag edu">EDUCACIÓN</span>
@@ -734,13 +772,8 @@ Además de dictar clases y acompañar a tutores, realizo las correcciones de los
           <span class="date">2012</span>
         </div>
       </div>
-
-
-
-
-
       
-            <!-- ITEM 9 -->
+      <!-- ITEM 21 -->
       <div class="timeline-item right">
         <div class="timeline-content">
           <span class="tag edu">EDUCACIÓN</span>
@@ -751,18 +784,16 @@ Además de dictar clases y acompañar a tutores, realizo las correcciones de los
       </div>
 
 
-
-
     </div>
 
   </div>
 
 </section>
 
+<!--------------------------------- TIMELINE FIN ------------------------------------->
 
-
-
-<section class="stats">
+<!--------------------------------- HITOS INICIA ------------------------------------->
+<section class="stats" id="hitos">
 
   <div class="stats-wrapper">
 
@@ -809,14 +840,9 @@ Además de dictar clases y acompañar a tutores, realizo las correcciones de los
   </div>
 
 </section>
+<!--------------------------------- HITOS FIN ---------------------------------------->
 
-
-
-
-
-
-
-
+<!--------------------------------- FOOTER INICIA ------------------------------------>
 
 <footer class="footer">
 
@@ -837,7 +863,7 @@ Además de dictar clases y acompañar a tutores, realizo las correcciones de los
       <div class="footer-box">
         <h3>Enlaces</h3>
         <a href="#about">Acerca de mí</a>
-        <a href="#tech">Tecnologías</a>
+        <a href="#stack">Tecnologías</a>
         <a href="#portfolio">Proyectos</a>
         <a href="#timeline">Experiencia</a>
       </div>
@@ -845,7 +871,7 @@ Además de dictar clases y acompañar a tutores, realizo las correcciones de los
       <!-- CONTACT -->
       <div class="footer-box">
         <h3>Contacto</h3>
-        <p>Email: tuemail@email.com</p>
+        <p>Email: 11.emanuel.cabral@gmail.com</p>
         <p>Ubicación: Argentina</p>
       </div>
 
@@ -884,11 +910,14 @@ Además de dictar clases y acompañar a tutores, realizo las correcciones de los
   </div>
 
 </footer>
+<!--------------------------------- FOOTER FIN --------------------------------------->
+<!--------------------------------- SUBIR INICIA ------------------------------------->
+<a href="#" id="subir">
+  <i class="fa-solid fa-chevron-up"></i>
+</a>
+<!--------------------------------- SUBIR FIN ---------------------------------------->
 
-
-
-
-
+<!--------------------------------- SCRIPT HITOS INICIA ------------------------------>
 <script>
 const counters = document.querySelectorAll('.counter');
 
@@ -912,7 +941,43 @@ counters.forEach(counter => {
   updateCount();
 });
 </script>
+<!--------------------------------- SCRIPT HITOS FIN --------------------------------->
+<!--------------------------------- SCRIPT ANIMACION DE TEXTO INICIO ----------------->
+<script>
+  const words = ["Web Developer", "Technology professor", "IA Engineer"];
+  let wordIndex = 0;
+  let charIndex = 0;
+  let currentWord = "";
+  let isDeleting = false;
 
+  function typeEffect() {
+    const display = document.getElementById("text");
+    currentWord = words[wordIndex];
+
+    if (!isDeleting) {
+      display.textContent = currentWord.substring(0, charIndex++);
+      
+      if (charIndex > currentWord.length) {
+        isDeleting = true;
+        setTimeout(typeEffect, 1000); // pausa al terminar palabra
+        return;
+      }
+    } else {
+      display.textContent = currentWord.substring(0, charIndex--);
+      
+      if (charIndex === 0) {
+        isDeleting = false;
+        wordIndex = (wordIndex + 1) % words.length;
+      }
+    }
+
+    setTimeout(typeEffect, isDeleting ? 50 : 100);
+  }
+
+  typeEffect();
+</script>
+
+<!--------------------------------- SCRIPT ANIMACION DE TEXTO FIN -------------------------->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
 

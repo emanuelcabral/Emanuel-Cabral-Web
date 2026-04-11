@@ -1323,3 +1323,52 @@ h1{
         font-size: 22px;
     }
 }
+
+
+
+
+
+
+
+
+    #text::after {
+      content: "|";
+      animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+      0%, 50%, 100% { opacity: 1; }
+      25%, 75% { opacity: 0; }
+    }
+
+
+
+
+
+
+
+#subir {
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background: #0A66C2;
+  color: white;
+  text-decoration: none;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  transition: all 0.2s ease;
+}
+
+#subir:hover {
+  background: #084a8f;
+  transform: translateY(-2px);
+}
+
+#subir i{
+  font-size: 18px;
+}
