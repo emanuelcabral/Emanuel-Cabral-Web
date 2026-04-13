@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/perfil1.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
@@ -15,11 +16,11 @@
 <!--------------------------------- HERO INICIA -------------------------------------->
 <div class="container-fluid banner">
     <canvas class="canvasParticles-two" width="1536" height="243"></canvas>
-    <nav class="navbar navbar-expand-sm">
+    <nav class="navbar navbar-expand-xl">
         <div class="container-fluid">
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
+                <i class="fa-solid fa-bars"></i>
             </button>
 
             <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
@@ -47,22 +48,31 @@
                     </li>
 
                     <!-- REDES -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <i>| </i>
+                    <li class="nav-item" id="redes">
+                      <i class="redes-bar">| </i>
+                        <a class="nav-link" href="https://github.com/emanuelcabral">
                             <i class="fa-brands fa-github"></i>
-                            <i class="fa-brands fa-linkedin"></i>
-                            <i class="fa-brands fa-youtube"></i>
-                            <i class="fa-brands fa-behance"></i>
                         </a>
+
+                        <a class="nav-link" href="https://www.linkedin.com/in/emanuelcabral11/">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+
+                        <!-- <a class="nav-link" href="https://youtube.com">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+
+                        <a class="nav-link" href="https://behance.net">
+                            <i class="fa-brands fa-behance"></i>
+                        </a> -->
                     </li>
 
                     <!-- IDIOMAS -->
                     <li class="nav-item idiomas">
-                        <a class="nav-link" href="index-es.html" title="Español">
+                        <a class="nav-link" href="index.html" title="Español">
                             <img src="img/spain.png" alt="Español">
                         </a>
-                        <a class="nav-link" href="index-en.html" title="English">
+                        <a class="nav-link" href="home.html" title="English">
                             <img src="img/reino-unido.png" alt="English">
                         </a>
                     </li>
@@ -79,10 +89,10 @@
                 <h1>Emanuel <span>Cabral</span></h1>
                 <!-- <p>Desarrollador Web - Profesor - IA</p> -->
                  <p id="text"></p>
-                <a href="#">Contact</a>
+                <a href="#contacto">Contact</a>
             </div>
             <div class="col-sm-6">
-                <img src="img/perfil1.png" alt="perfil">
+                <img src="img/perfil1.png" alt="perfil" data-aos="zoom-in">
             </div>
         </div>
     </div>
@@ -131,22 +141,22 @@
       <!-- DERECHA -->
         <div class="about-me-stats">
 
-        <div class="stat-box">
+        <div class="stat-box" data-aos="fade-up">
             <h3>+10</h3>
             <span>Years of experience</span>
         </div>
 
-        <div class="stat-box">
+        <div class="stat-box" data-aos="fade-up">
             <h3>+40</h3>
             <span>Completed projects</span>
         </div>
 
-        <div class="stat-box">
+        <div class="stat-box" data-aos="fade-up">
             <h3>Full Stack</h3>
             <span>Web Development</span>
         </div>
 
-        <div class="stat-box">
+        <div class="stat-box" data-aos="fade-up">
             <h3>UI/UX</h3>
             <span>Modern design</span>
         </div>
@@ -172,40 +182,40 @@
 
         <div class="tech-grid">
 
-            <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" loading="lazy"><span>HTML</span></div>
-            <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" loading="lazy"><span>CSS</span></div>
-            <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" loading="lazy"><span>SASS</span></div>
-            <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/less/less-plain-wordmark.svg" loading="lazy"><span>LESS</span></div>
+            <div class="tech-item" data-aos="zoom-in"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" loading="lazy"><span>HTML</span></div>
+            <div class="tech-item" data-aos="zoom-in"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" loading="lazy"><span>CSS</span></div>
+            <div class="tech-item" data-aos="zoom-in"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" loading="lazy"><span>SASS</span></div>
+            <div class="tech-item" data-aos="zoom-in"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/less/less-plain-wordmark.svg" loading="lazy"><span>LESS</span></div>
 
-            <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" loading="lazy"><span>Bootstrap</span></div>
+            <div class="tech-item" data-aos="zoom-in"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" loading="lazy"><span>Bootstrap</span></div>
 
             <!-- Tailwind CSS logo (remoto y funcional) -->
-            <div class="tech-item"><img src="https://images.icon-icons.com/2107/PNG/512/file_type_tailwind_icon_130128.png" loading="lazy"><span>Tailwind</span></div> <!-- logo oficial SVG remoto :contentReference[oaicite:0]{index=0} -->
+            <div class="tech-item" data-aos="zoom-in"><img src="https://images.icon-icons.com/2107/PNG/512/file_type_tailwind_icon_130128.png" loading="lazy"><span>Tailwind</span></div> <!-- logo oficial SVG remoto :contentReference[oaicite:0]{index=0} -->
 
-            <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg" loading="lazy"><span>jQuery</span></div>
-            <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" loading="lazy"><span>JavaScript</span></div>
-            <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" loading="lazy"><span>React</span></div>
-            <div class="tech-item"><img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" loading="lazy"><span>Git</span></div>
-            <div class="tech-item"><img src="https://cdn-icons-png.flaticon.com/512/919/919847.png" loading="lazy"><span>Github</span></div>
+            <div class="tech-item" data-aos="zoom-in"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg" loading="lazy"><span>jQuery</span></div>
+            <div class="tech-item" data-aos="zoom-in"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" loading="lazy"><span>JavaScript</span></div>
+            <div class="tech-item" data-aos="zoom-in"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" loading="lazy"><span>React</span></div>
+            <div class="tech-item" data-aos="zoom-in"><img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" loading="lazy"><span>Git</span></div>
+            <div class="tech-item" data-aos="zoom-in"><img src="https://cdn-icons-png.flaticon.com/512/919/919847.png" loading="lazy"><span>Github</span></div>
 
-            <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" loading="lazy"><span>PHP</span></div>
-            <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" loading="lazy"><span>Python</span></div>
-            <div class="tech-item">  <img src="https://assets.streamlinehq.com/image/private/w_300,h_300,ar_1/f_auto/v1/icons/3/django-icon-ozb2brnujb9dunjyx3d9xe.png/django-icon-p0v5p3t0ixxd5d03b6zt.png?_a=DATAiZAAZAA0" 
+            <div class="tech-item" data-aos="zoom-in"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" loading="lazy"><span>PHP</span></div>
+            <div class="tech-item" data-aos="zoom-in"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" loading="lazy"><span>Python</span></div>
+            <div class="tech-item" data-aos="zoom-in">  <img src="https://assets.streamlinehq.com/image/private/w_300,h_300,ar_1/f_auto/v1/icons/3/django-icon-ozb2brnujb9dunjyx3d9xe.png/django-icon-p0v5p3t0ixxd5d03b6zt.png?_a=DATAiZAAZAA0" 
        alt="Django logo" loading="lazy"><span>Django</span></div>
 
-            <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" loading="lazy"><span>MySQL</span></div>
-            <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" loading="lazy"><span>PostgreSQL</span></div>
+            <div class="tech-item" data-aos="zoom-in"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" loading="lazy"><span>MySQL</span></div>
+            <div class="tech-item" data-aos="zoom-in"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" loading="lazy"><span>PostgreSQL</span></div>
 
-            <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg" loading="lazy"><span>WordPress</span></div>
+            <div class="tech-item" data-aos="zoom-in"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg" loading="lazy"><span>WordPress</span></div>
 
-            <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" loading="lazy"><span>Figma</span></div>
-            <div class="tech-item"><img src="https://www.adobe.com/cc-shared/assets/img/product-icons/svg/photoshop-40.svg" loading="lazy"><span>Photoshop</span></div>
-            <div class="tech-item"><img src="https://www.adobe.com/cc-shared/assets/img/product-icons/svg/illustrator-40.svg" loading="lazy"><span>Illustrator</span></div>
-            <div class="tech-item"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Adobe_Fireworks_CS6_Icon.png/330px-Adobe_Fireworks_CS6_Icon.png" loading="lazy"><span>Fireworks</span></div>
+            <div class="tech-item" data-aos="zoom-in"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" loading="lazy"><span>Figma</span></div>
+            <div class="tech-item" data-aos="zoom-in"><img src="https://www.adobe.com/cc-shared/assets/img/product-icons/svg/photoshop-40.svg" loading="lazy"><span>Photoshop</span></div>
+            <div class="tech-item" data-aos="zoom-in"><img src="https://www.adobe.com/cc-shared/assets/img/product-icons/svg/illustrator-40.svg" loading="lazy"><span>Illustrator</span></div>
+            <div class="tech-item" data-aos="zoom-in"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Adobe_Fireworks_CS6_Icon.png/330px-Adobe_Fireworks_CS6_Icon.png" loading="lazy"><span>Fireworks</span></div>
 
             <!-- SEO / SEM / IA (íconos genéricos libres) -->
-            <div class="tech-item"><img src="https://png.pngtree.com/png-vector/20230817/ourmid/pngtree-google-seo-icon-vector-png-image_9183334.png" loading="lazy"><span>SEO</span></div>
-            <div class="tech-item"><img src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png" loading="lazy"><span>IA</span></div>
+            <div class="tech-item" data-aos="zoom-in"><img src="https://png.pngtree.com/png-vector/20230817/ourmid/pngtree-google-seo-icon-vector-png-image_9183334.png" loading="lazy"><span>SEO</span></div>
+            <div class="tech-item" data-aos="zoom-in"><img src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png" loading="lazy"><span>IA</span></div>
 
         </div>
 
@@ -218,127 +228,142 @@
   <div class="portfolio-wrapper">
 
     <div class="portfolio-header">
-    <h3>PORTFOLIO</h3>
-    <h2>My <span>Projects</span></h2>
-    <p>Some of the projects I have developed</p>
+      <h3>PORTFOLIO</h3>
+      <h2>My <span>Projects</span></h2>
+      <p>Some of the projects I have developed</p>
     </div>
 
-    <!-- Carrusel Slide 1 -->
+    <!-- Slide 1 -->
     <div class="portfolio-slide">
       <div class="portfolio-grid">
-        <!-- Proyecto 1 -->
-        <div class="portfolio-item">
-          <img src="./img/portfolio/Pyme Finance.gif" alt="Proyecto 1" loading="lazy">
+
+        <div class="portfolio-item" data-aos="fade-up" data-aos-delay="200">
+          <img src="./img/portfolio/Pyme Finance.gif" alt="Project 1" loading="lazy">
           <h4>Pyme Finance</h4>
-          <p>Sitio web para una PYME financiera, desarrollado con tecnologías web estándar y recursos multimedia. El objetivo es ofrecer una plataforma clara, adaptable y profesional para la presentación de servicios financieros.</p>
-          <a href="https://codercabral.github.io/martingarcia/" target="_blank">Ver Proyecto</a>
+          <p>Website for a small financial business, developed using standard web technologies and multimedia resources. The goal is to provide a clear, responsive, and professional platform for presenting financial services.</p>
+          <a href="https://codercabral.github.io/martingarcia/" target="_blank">View Project</a>
         </div>
-        <div class="portfolio-item">
-          <img src="./img/portfolio/ConciencIA Digital.gif" alt="Proyecto 2" loading="lazy">
+
+        <div class="portfolio-item" data-aos="fade-up" data-aos-delay="400">
+          <img src="./img/portfolio/ConciencIA Digital.gif" alt="Project 2" loading="lazy">
           <h4>ConciencIA Digital</h4>
-          <p>ConciencIA Digital es un blog de noticias sobre Inteligencia Artificial que comparte novedades, avances y temas clave del sector, incluyendo su impacto en la sociedad, oportunidades y desafíos.</p>
-          <a href="https://emanuelcabral.github.io/ConciencIA-Digital/" target="_blank">Ver Proyecto</a>
+          <p>ConciencIA Digital is a news blog about Artificial Intelligence that shares updates, advancements, and key topics in the field, including its impact on society, opportunities, and challenges.</p>
+          <a href="https://emanuelcabral.github.io/ConciencIA-Digital/" target="_blank">View Project</a>
         </div>
-        <div class="portfolio-item">
-          <img src="./img/portfolio/gjg.gif" alt="Proyecto 3" loading="lazy">
-          <h4>Gustavo j. Gonzalez</h4>
-          <p>Kinesiología GG es un sitio web profesional donde el kinesiólogo se presenta y muestra sus servicios, experiencia y enfoque de trabajo en la rehabilitación y el cuidado del movimiento humano.</p>
-          <a href="https://emanuelcabral.github.io/kinesiologia-gg/" target="_blank">Ver Proyecto</a>
+
+        <div class="portfolio-item" data-aos="fade-up" data-aos-delay="600">
+          <img src="./img/portfolio/gjg.gif" alt="Project 3" loading="lazy">
+          <h4>Gustavo J. Gonzalez</h4>
+          <p>Kinesiology GG is a professional website where the kinesiologist presents his services, experience, and approach to rehabilitation and human movement care.</p>
+          <a href="https://emanuelcabral.github.io/kinesiologia-gg/" target="_blank">View Project</a>
         </div>
-        <div class="portfolio-item">
-          <img src="./img/portfolio/mariemk.gif" alt="Proyecto 4" loading="lazy">
+
+        <div class="portfolio-item" data-aos="fade-up" data-aos-delay="800">
+          <img src="./img/portfolio/mariemk.gif" alt="Project 4" loading="lazy">
           <h4>Marie-MaryKay</h4>
-          <p>Marie MaryKay, un proyecto web creado para una asesora de imagen y belleza que busca darse a conocer y compartir su propuesta de valor de manera clara, elegante y profesional.</p>
-          <a href="#" target="_blank">Ver Proyecto</a>
+          <p>Marie MaryKay is a web project created for an image and beauty consultant who aims to present her value proposition in a clear, elegant, and professional way.</p>
+          <a href="#" target="_blank">View Project</a>
         </div>
+
       </div>
 
       <div class="portfolio-grid">
-        <!-- Proyecto 5 -->
-        <div class="portfolio-item">
-          <img src="./img/portfolio/cfp402.gif" alt="Proyecto 5" loading="lazy">
+
+        <div class="portfolio-item" data-aos="fade-up" data-aos-delay="200">
+          <img src="./img/portfolio/cfp402.gif" alt="Project 5" loading="lazy">
           <h4>CFP 402</h4>
-          <p>Proyecto Educativo sobre un centro de formacion profesional</p>
-          <a href="https://emanuelcabral.github.io/cfp402/" target="_blank">Ver Proyecto</a>
+          <p>Educational project about a vocational training center.</p>
+          <a href="https://emanuelcabral.github.io/cfp402/" target="_blank">View Project</a>
         </div>
-        <div class="portfolio-item">
-          <img src="./img/portfolio/yourdreamsweb.gif" alt="Proyecto 6" loading="lazy">
-          <h4>yourdreamswebsite</h4>
-          <p>Es una web orientada a la promoción y venta de servicios de desarrollo web, diseñada como landing page para presentar ofertas, captar clientes y facilitar el contacto comercial.</p>
-          <a href="https://emanuelcabral.github.io/yourdreamswebsite/" target="_blank">Ver Proyecto</a>
+
+        <div class="portfolio-item" data-aos="fade-up" data-aos-delay="400">
+          <img src="./img/portfolio/yourdreamsweb.gif" alt="Project 6" loading="lazy">
+          <h4>Your Dreams Website</h4>
+          <p>A website focused on promoting and selling web development services, designed as a landing page to showcase offers, attract clients, and facilitate business contact.</p>
+          <a href="https://emanuelcabral.github.io/yourdreamswebsite/" target="_blank">View Project</a>
         </div>
-        <div class="portfolio-item">
-          <img src="./img/portfolio/burgerplace.gif" alt="Proyecto 7" loading="lazy">
+
+        <div class="portfolio-item" data-aos="fade-up" data-aos-delay="600">
+          <img src="./img/portfolio/burgerplace.gif" alt="Project 7" loading="lazy">
           <h4>Burger Place</h4>
-          <p>Proyecto educativo de construcción de sitio llamado Burger Place</p>
-          <a href="https://emanuelcabral.github.io/burger_place/" target="_blank">Ver Proyecto</a>
+          <p>Educational project for building a website called Burger Place.</p>
+          <a href="https://emanuelcabral.github.io/burger_place/" target="_blank">View Project</a>
         </div>
-        <div class="portfolio-item">
-          <img src="./img/portfolio/timeline.gif" alt="Proyecto 8" loading="lazy">
-          <h4>Time line</h4>
-          <p>Timeline Profesional es una página web que presenta una línea de tiempo interactiva del recorrido profesional, desarrollada con HTML, CSS y JavaScript.</p>
-          <a href="https://emanuelcabral.github.io/TimeLine/" target="_blank">Ver Proyecto</a>
+
+        <div class="portfolio-item" data-aos="fade-up" data-aos-delay="800">
+          <img src="./img/portfolio/timeline.gif" alt="Project 8" loading="lazy">
+          <h4>Timeline</h4>
+          <p>Professional Timeline is a website that presents an interactive timeline of a professional journey, built with HTML, CSS, and JavaScript.</p>
+          <a href="https://emanuelcabral.github.io/TimeLine/" target="_blank">View Project</a>
         </div>
+
       </div>
     </div>
 
-    <!-- Carrusel Slide 2 (otros 8 proyectos) -->
+    <!-- Slide 2 -->
     <div class="portfolio-slide">
       <div class="portfolio-grid">
-        <!-- Proyecto 9-12 -->
-        <div class="portfolio-item">
-          <img src="./img/portfolio/tecnomarema.gif" alt="Proyecto 9" loading="lazy">
+
+        <div class="portfolio-item" data-aos="fade-up" data-aos-delay="200">
+          <img src="./img/portfolio/tecnomarema.gif" alt="Project 9" loading="lazy">
           <h4>Tecno Marema</h4>
-          <p>TecnoMarema es una web de una institución educativa que ofrece cursos de tecnología, orientada a la formación y el aprendizaje mediante contenidos y recursos digitales.</p>
-          <a href="https://emanuelcabral.github.io/TecnoMarema/" target="_blank">Ver Proyecto</a>
+          <p>TecnoMarema is an educational institution website that offers technology courses focused on learning through digital content and resources.</p>
+          <a href="https://emanuelcabral.github.io/TecnoMarema/" target="_blank">View Project</a>
         </div>
-        <div class="portfolio-item">
-          <img src="./img/portfolio/slider.gif" alt="Proyecto 10" loading="lazy">
-          <h4>Slider(Hecho solo con CSS)</h4>
-          <p>es un carrusel de imágenes interactivo desarrollado únicamente con HTML y CSS, que permite navegar entre imágenes mediante scroll y puntos indicadores animados, sin uso de JavaScript.</p>
-          <a href="https://emanuelcabral.github.io/slider1/" target="_blank">Ver Proyecto</a>
+
+        <div class="portfolio-item" data-aos="fade-up" data-aos-delay="400">
+          <img src="./img/portfolio/slider.gif" alt="Project 10" loading="lazy">
+          <h4>CSS Slider</h4>
+          <p>An interactive image carousel built only with HTML and CSS, allowing navigation through images using scroll and animated indicators, without JavaScript.</p>
+          <a href="https://emanuelcabral.github.io/slider1/" target="_blank">View Project</a>
         </div>
-        <div class="portfolio-item">
-          <img src="./img/portfolio/memory-game.gif" alt="Proyecto 11" loading="lazy">
+
+        <div class="portfolio-item" data-aos="fade-up" data-aos-delay="600">
+          <img src="./img/portfolio/memory-game.gif" alt="Project 11" loading="lazy">
           <h4>Memory Game</h4>
-          <p>Es un proyecto educativo de un juego que está hecho con HTML, CSS y JavaScript, e incluye sonidos, animaciones, temporizador y contador de movimientos, ofreciendo una experiencia interactiva y profesional</p>
-          <a href="https://emanuelcabral.github.io/memory-game/" target="_blank">Ver Proyecto</a>
+          <p>An educational project of a game built with HTML, CSS, and JavaScript, featuring sounds, animations, a timer, and a move counter, offering an interactive and professional experience.</p>
+          <a href="https://emanuelcabral.github.io/memory-game/" target="_blank">View Project</a>
         </div>
-        <div class="portfolio-item">
-          <!-- <img src="https://media.giphy.com/media/3o7TKL3Yj7J8k28myE/giphy.gif" alt="Proyecto 12" loading="lazy"> -->
-          <img src="./img/portfolio/favicon.gif" alt="Proyecto 12" loading="lazy">
+
+        <div class="portfolio-item" data-aos="fade-up" data-aos-delay="800">
+          <img src="./img/portfolio/favicon.gif" alt="Project 12" loading="lazy">
           <h4>Favicon Generator</h4>
-          <p>Genera imagenes convertidas a favicones y el codigo html</p>
-          <a href="https://emanuelcabral.github.io/generador-de-favicones/" target="_blank">Ver Proyecto</a>
+          <p>Generates images converted into favicons along with the HTML code.</p>
+          <a href="https://emanuelcabral.github.io/generador-de-favicones/" target="_blank">View Project</a>
         </div>
+
       </div>
 
       <div class="portfolio-grid">
-        <!-- Proyecto 13-16 -->
-        <div class="portfolio-item">
-          <img src="./img/portfolio/adivina-el-numero.gif" alt="Proyecto 13" loading="lazy">
-          <h4>Adivina el Número</h4>
-          <p>Es un proyecto educativo de una web interactiva donde el usuario intenta adivinar un número secreto entre 1 y 100, creado con HTML , CSS y JS.</p>
-          <a href="https://emanuelcabral.github.io/adivina-el-numero/" target="_blank">Ver Proyecto</a>
+
+        <div class="portfolio-item" data-aos="fade-up" data-aos-delay="200">
+          <img src="./img/portfolio/adivina-el-numero.gif" alt="Project 13" loading="lazy">
+          <h4>Guess the Number</h4>
+          <p>An interactive web game where the user tries to guess a secret number between 1 and 100, built with HTML, CSS, and JavaScript.</p>
+          <a href="https://emanuelcabral.github.io/adivina-el-numero/" target="_blank">View Project</a>
         </div>
-        <div class="portfolio-item">
-          <img src="./img/portfolio/imc.gif" alt="Proyecto 14" loading="lazy">
-          <h4>Calcular el IMC</h4>
-          <p>Es un proyecto educativo de una herramienta web interactiva que permite calcular el Índice de Masa Corporal (IMC) en función del peso y la altura del usuario</p>
-          <a href="https://emanuelcabral.github.io/calcular-IMC/" target="_blank">Ver Proyecto</a>
+
+        <div class="portfolio-item" data-aos="fade-up" data-aos-delay="400">
+          <img src="./img/portfolio/imc.gif" alt="Project 14" loading="lazy">
+          <h4>BMI Calculator</h4>
+          <p>An interactive web tool that calculates Body Mass Index (BMI) based on the user's weight and height.</p>
+          <a href="https://emanuelcabral.github.io/calcular-IMC/" target="_blank">View Project</a>
         </div>
-        <div class="portfolio-item">
-          <img src="./img/portfolio/tateti.gif" alt="Proyecto 15" loading="lazy">
-          <h4>Tateti</h4>
-          <p>Es un proyecto educativo de un juego polular conocido como Tateti (Tres en Raya), juego interactivo, desarrollado con HTML, CSS y JavaScript</p>
-          <a href="https://emanuelcabral.github.io/tateti/" target="_blank">Ver Proyecto</a>
+
+        <div class="portfolio-item" data-aos="fade-up" data-aos-delay="600">
+          <img src="./img/portfolio/tateti.gif" alt="Project 15" loading="lazy">
+          <h4>Tic Tac Toe</h4>
+          <p>A classic Tic Tac Toe game built with HTML, CSS, and JavaScript.</p>
+          <a href="https://emanuelcabral.github.io/tateti/" target="_blank">View Project</a>
         </div>
-        <div class="portfolio-item">
-          <img src="./img/portfolio/piedra-papel-tijera.gif" alt="Proyecto 16" loading="lazy">
-          <h4>Piedra Papel y Tijera</h4>
-          <p>Es un proyecto educativo de un juego clásico, de Piedra, Papel y Tijera desarrollado con HTML, CSS y JavaScript</p>
-          <a href="https://emanuelcabral.github.io/piedra-papel-y-tijera/" target="_blank">Ver Proyecto</a>
+
+        <div class="portfolio-item" data-aos="fade-up" data-aos-delay="800">
+          <img src="./img/portfolio/piedra-papel-tijera.gif" alt="Project 16" loading="lazy">
+          <h4>Rock Paper Scissors</h4>
+          <p>A classic Rock, Paper, Scissors game built with HTML, CSS, and JavaScript.</p>
+          <a href="https://emanuelcabral.github.io/piedra-papel-y-tijera/" target="_blank">View Project</a>
         </div>
+
       </div>
     </div>
 
@@ -354,172 +379,170 @@
 
     <div class="testimonials-header">
       <h3>TESTIMONIALS</h3>
-      <h2>Resultados que hablan<span> por sí solos</span></h2>
-      <p>Opiniones de clientes y colegas</p>
+      <h2>Results that speak<span> for themselves</span></h2>
+      <p>Opinions from clients and colleagues</p>
     </div>
 
     <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
 
       <div class="carousel-inner">
 
-        <!-- TESTIMONIO 1 -->
+        <!-- TESTIMONIAL 1 -->
         <div class="carousel-item active">
           <div class="testimonial-card">
 
             <p>
-              “Excelente profesional, entregó el proyecto antes de tiempo y con una calidad impresionante.
-              Comunicación clara y resultados impecables.”
+              “Excellent professional, delivered the project ahead of schedule with outstanding quality.
+              Clear communication and flawless results.”
             </p>
 
             <div class="testimonial-user">
               <img src="./img/martin garcia.jpeg" alt="user">
               <div>
                 <h4>Martin Garcia</h4>
-                <span>Cliente</span>
+                <span>Client</span>
               </div>
             </div>
 
           </div>
         </div>
 
-        <!-- TESTIMONIO 2 -->
+        <!-- TESTIMONIAL 2 -->
         <div class="carousel-item">
           <div class="testimonial-card">
 
             <p>
-              “Excelente experiencia trabajar con Emanuel, fui parte del equipo en Coderhouse en el que se desempeño como profesor cumpliendo a la perfección el rol”
+              “Great experience working with Emanuel. I was part of the team at Coderhouse where he performed his role as a teacher perfectly.”
             </p>
 
             <div class="testimonial-user">
               <img src="./img/federico lucero.jpeg" alt="user">
               <div>
                 <h4>Federico Lucero</h4>
-                <span>Tutor de Desarrollo web</span>
+                <span>Web Development Tutor</span>
               </div>
             </div>
 
           </div>
         </div>
 
-        <!-- TESTIMONIO 3 -->
+        <!-- TESTIMONIAL 3 -->
         <div class="carousel-item">
           <div class="testimonial-card">
 
             <p>
-              “Emanuel fue mi primer profesor en Numen Academy, con él asenté las bases de frontend. Sus clases fueron excelentes, aprendí de manera didáctica y dinámica conceptos de HTML, CSS, Flexbox, Grid, animaciones y Bootstrap, ademas de compartirnos herramientas para usar en los proyectos. Siempre estuvo predispuesto a resolver dudas propias y del grupo, como así también en darnos un freedback constructivo ante los trabajos prácticos propuestos. Excelente docente. Uno de los motivos por que recomiendo Numen Academy. Siempre agradecido.”
+              “Emanuel was my first teacher at Numen Academy. With him I built the foundations of frontend development. His classes were excellent — I learned in a dynamic and didactic way concepts such as HTML, CSS, Flexbox, Grid, animations, and Bootstrap, as well as useful tools for projects. He was always willing to answer questions and provide constructive feedback on assignments. Excellent teacher. One of the reasons I recommend Numen Academy. Always grateful.”
             </p>
 
             <div class="testimonial-user">
               <img src="./img/ivan vila.jpeg" alt="user">
               <div>
                 <h4>Iván José Vila</h4>
-                <span>Estudiante</span>
+                <span>Student</span>
               </div>
             </div>
 
           </div>
         </div>
 
-        <!-- TESTIMONIO 4 -->
+        <!-- TESTIMONIAL 4 -->
         <div class="carousel-item">
           <div class="testimonial-card">
 
             <p>
-              “Hola profesor, ante todo darle las GRACIAS por tan buenas clases. La verdad que ha sido uno de los mejores profesores que me ha tocado en Coder, estoy muy contenta con los avances que he visto en mi y ha sido en gran parte por la calidad de su enseñanza. Se nota que le gusta transmitir sus conocimientos y tiene mucha paciencia. Estoy muy agradecida. Espero que me toque en otro curso :)”
+              “Hi professor, first of all THANK YOU for such great classes. Honestly, you have been one of the best teachers I’ve had at Coderhouse. I’m very happy with my progress, and it’s largely thanks to your teaching quality. You clearly enjoy sharing your knowledge and have a lot of patience. I’m very grateful. I hope to have you again in another course :)”
             </p>
 
             <div class="testimonial-user">
               <img src="./img/avatar.svg" alt="user">
               <div>
                 <h4>Clara Villalba</h4>
-                <span>Estudiante</span>
+                <span>Student</span>
               </div>
             </div>
 
           </div>
         </div>
 
-        <!-- TESTIMONIO 5 -->
+        <!-- TESTIMONIAL 5 -->
         <div class="carousel-item">
           <div class="testimonial-card">
 
             <p>
-              “Excelente el profesor. Te mantiene entretenido y prestando atención en clase. Le mete mucha onda, lo que te permite que si estas cansado por el horario no te pierdas.”
+              “Excellent teacher. He keeps the class engaging and easy to follow. He brings great energy, which helps even when you're tired due to the schedule.”
             </p>
 
             <div class="testimonial-user">
               <img src="./img/avatar.svg" alt="user">
               <div>
                 <h4>Florencia P.</h4>
-                <span>Estudiante</span>
+                <span>Student</span>
               </div>
             </div>
 
           </div>
         </div>
 
-        <!-- TESTIMONIO 6 -->
+        <!-- TESTIMONIAL 6 -->
         <div class="carousel-item">
           <div class="testimonial-card">
 
             <p>
-              “Muy buen profesor ! Es la tercera vez que curso este curso y al primero que le entiendo!”
+              “Very good teacher! It’s the third time I take this course and he is the first one I actually understand!”
             </p>
 
             <div class="testimonial-user">
               <img src="./img/avatar.svg" alt="user">
               <div>
                 <h4>Carlos J.</h4>
-                <span>Estudiante</span>
+                <span>Student</span>
               </div>
             </div>
 
           </div>
         </div>
 
-        <!-- TESTIMONIO 7 -->
+        <!-- TESTIMONIAL 7 -->
         <div class="carousel-item">
           <div class="testimonial-card">
 
             <p>
-              “Me encantó. Dejé de cursar por un tiempo en Coder, pero nunca tuve una clase tan dinámica y bien explicada. ¡Excelente trabajo!”
+              “I loved it. I stopped studying at Coderhouse for a while, but I’ve never had such a dynamic and well-explained class. Excellent work!”
             </p>
 
             <div class="testimonial-user">
               <img src="./img/avatar.svg" alt="user">
               <div>
                 <h4>Esteban B.</h4>
-                <span>Estudiante</span>
+                <span>Student</span>
               </div>
             </div>
 
           </div>
         </div>
         
-        <!-- TESTIMONIO 8 -->
+        <!-- TESTIMONIAL 8 -->
         <div class="carousel-item">
           <div class="testimonial-card">
 
             <p>
-              “La verdad que Emanuel es un genio y gran profe se preocupa por que entendamos”
+              “Emanuel is a genius and a great teacher. He really cares about making sure we understand.”
             </p>
 
             <div class="testimonial-user">
               <img src="./img/avatar.svg" alt="user">
               <div>
                 <h4>Eva S.</h4>
-                <span>Estudiante</span>
+                <span>Student</span>
               </div>
             </div>
 
           </div>
         </div>
 
-
-
       </div>
 
-      <!-- CONTROLES -->
+      <!-- CONTROLS -->
       <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
         <span class="carousel-control-prev-icon"></span>
       </button>
@@ -543,253 +566,233 @@
 
     <div class="timeline-header">
       <h3>JOURNEY</h3>
-      <h2>Mi <span>Trayectoria</span></h2>
-      <p>Experiencia laboral y formación académica</p>
+      <h2>My <span>Career</span></h2>
+      <p>Work experience and academic background</p>
     </div>
 
     <div class="timeline">
 
       <!-- ITEM 1 -->
-      <div class="timeline-item left">
+      <div class="timeline-item left" data-aos="fade-right">
         <div class="timeline-content">
-          <span class="tag exp">EXPERIENCIA</span>
-          <h4>Profesor de IA - Humanversum</h4>
-          <p>En Humanversum, dicto el curso de Inteligencia Artificial, impartiendo conceptos teóricos y prácticos, manejo de modelos generativos y aplicación de herramientas para crear contenido en múltiples formatos, fomentando la innovación y el pensamiento crítico.</p>
+          <span class="tag exp">EXPERIENCE</span>
+          <h4>AI Instructor - Humanversum</h4>
+          <p>At Humanversum, I teach Artificial Intelligence, delivering theoretical and practical concepts, generative models, and the use of tools to create content in multiple formats, fostering innovation and critical thinking.</p>
           <span class="date">2024 - 2024</span>
         </div>
       </div>
 
       <!-- ITEM 2 -->
-      <div class="timeline-item right">
+      <div class="timeline-item right" data-aos="fade-left">
         <div class="timeline-content">
-          <span class="tag edu">EDUCACIÓN</span>
-          <h4>Curso de Automatización y Robótica</h4>
-          <p>Univeridad Nacional de Tres de Febrero</p>
+          <span class="tag edu">EDUCATION</span>
+          <h4>Automation and Robotics Course</h4>
+          <p>National University of Tres de Febrero</p>
           <span class="date">2024</span>
         </div>
       </div>
 
       <!-- ITEM 3 -->
-      <div class="timeline-item left">
+      <div class="timeline-item left" data-aos="fade-right">
         <div class="timeline-content">
-          <span class="tag exp">EXPERIENCIA</span>
-          <h4>Profesor de IA - Coderhouse</h4>
-          <p>Docente de Inteligencia Artificial con enfoque teórico-práctico. Abordo la historia de la IA, machine learning, deep learning, redes neuronales, modelos generativos (GPT, GANs, Diffusion), ética en IA y aplicaciones prácticas. Trabajo con herramientas para generar texto, imágenes, audio, video, código y más, aplicando IA en contextos reales y multidisciplinarios.</p>
-          <span class="date">2023 - Actualidad</span>
+          <span class="tag exp">EXPERIENCE</span>
+          <h4>AI Instructor - Coderhouse</h4>
+          <p>Artificial Intelligence instructor with a theoretical-practical approach. I cover the history of AI, machine learning, deep learning, neural networks, generative models (GPT, GANs, Diffusion), AI ethics, and real-world applications. I work with tools to generate text, images, audio, video, code, and more, applying AI in real and multidisciplinary contexts.</p>
+          <span class="date">2023 - Present</span>
         </div>
       </div>
 
       <!-- ITEM 4 -->
-      <div class="timeline-item right">
+      <div class="timeline-item right" data-aos="fade-left">
         <div class="timeline-content">
-          <span class="tag exp">EXPERIENCIA</span>
-          <h4>Profesor de Python - Coderhouse</h4>
-          <p>Como docente de Python, imparto clases desde nivel inicial con un enfoque práctico y progresivo. Acompaño a los estudiantes en la construcción de una base sólida en lógica de programación, incluyendo variables, estructuras condicionales, bucles, funciones (simples y recursivas), y colecciones de datos como listas, diccionarios y tuplas.
+          <span class="tag exp">EXPERIENCE</span>
+          <h4>Python Instructor - Coderhouse</h4>
+          <p>As a Python instructor, I teach from beginner level with a practical and progressive approach. I guide students in building a strong foundation in programming logic, including variables, conditionals, loops, functions (simple and recursive), and data structures such as lists, dictionaries, and tuples.
 
-Avanzamos hacia conceptos intermedios y avanzados como la programación orientada a objetos (POO), el desarrollo de scripts, la creación y reutilización de módulos y paquetes, así como la distribución de proyectos. También abordo el manejo de archivos, incluyendo la lectura y edición de formatos como CSV, TXT y JSON.
+We advance into intermediate and advanced concepts such as object-oriented programming (OOP), script development, module and package creation and reuse, and project distribution. I also cover file handling, including reading and editing formats such as CSV, TXT, and JSON.
 
-Además, enseño el uso de herramientas esenciales para el desarrollo profesional como Git y GitHub, aplicando buenas prácticas de versionado y colaboración. Mi objetivo es que los alumnos puedan aplicar Python para resolver problemas reales, automatizar tareas, y desarrollar bases para proyectos más complejos.</p>
-          <span class="date">2023 - Actualidad</span>
-        </div>
-      </div>
-
-    <!-- ITEM 4 -->
-      <div class="timeline-item left">
-        <div class="timeline-content">
-          <span class="tag exp">EXPERIENCIA</span>
-          <h4>Profesor de Wordpress - Coderhouse</h4>
-          <p>Como docente de WordPress, enseño a los estudiantes a crear y administrar sitios web profesionales sin necesidad de programar, utilizando temas, plugins y constructores visuales como Elementor. Abordo el proceso completo desde la instalación hasta la publicación, incluyendo configuración de dominios, hosting, seguridad, personalización del diseño, optimización y nociones de SEO. También enseño el uso de WooCommerce para la creación de tiendas online, gestión de productos, métodos de pago y experiencia del usuario. Fomento buenas prácticas y autonomía en la creación de sitios adaptados a distintos perfiles y necesidades.</p>
-          <span class="date">2023 - Actualidad</span>
+Additionally, I teach essential professional tools such as Git and GitHub, applying best practices for version control and collaboration. My goal is for students to use Python to solve real problems, automate tasks, and build foundations for more complex projects.</p>
+          <span class="date">2023 - Present</span>
         </div>
       </div>
 
       <!-- ITEM 5 -->
-      <div class="timeline-item right">
+      <div class="timeline-item left" data-aos="fade-right">
         <div class="timeline-content">
-          <span class="tag exp">EXPERIENCIA</span>
-          <h4>Profesor No-code - Coderhouse</h4>
-          <p>Enseño a usar Bubble para crear aplicaciones web sin necesidad de programar, enfocándome en el diseño visual, bases de datos, workflows y despliegue de proyectos funcionales.</p>
-          <span class="date">2023 - Actualidad</span>
+          <span class="tag exp">EXPERIENCE</span>
+          <h4>WordPress Instructor - Coderhouse</h4>
+          <p>As a WordPress instructor, I teach students how to create and manage professional websites without programming, using themes, plugins, and visual builders like Elementor. I cover the entire process from installation to deployment, including domain setup, hosting, security, design customization, optimization, and basic SEO concepts. I also teach WooCommerce for building online stores, product management, payment methods, and user experience. I encourage autonomy and best practices for building websites tailored to different needs.</p>
+          <span class="date">2023 - Present</span>
         </div>
       </div>
 
-
       <!-- ITEM 6 -->
-      <div class="timeline-item left">
+      <div class="timeline-item right" data-aos="fade-left">
         <div class="timeline-content">
-          <span class="tag exp">EXPERIENCIA</span>
-          <h4>Profesor de Python - Codo a Codo</h4>
-          <p>Enseño programación inicial, desarrollando material educativo y dictando clases enfocadas en lógica de programación, manejo de PSeInt, Python, Git, GitHub, bases de datos y SQL, orientando a los estudiantes hacia la resolución práctica de problemas.</p>
-          <span class="date">2022 - 2023</span>
+          <span class="tag exp">EXPERIENCE</span>
+          <h4>No-Code Instructor - Coderhouse</h4>
+          <p>I teach how to use Bubble to build web applications without coding, focusing on visual design, databases, workflows, and deployment of functional projects.</p>
+          <span class="date">2023 - Present</span>
         </div>
       </div>
 
       <!-- ITEM 7 -->
-      <div class="timeline-item left">
+      <div class="timeline-item left" data-aos="fade-right">
         <div class="timeline-content">
-          <span class="tag exp">EXPERIENCIA</span>
-          <h4>Profesor de Desarrollo Web - Coderhouse</h4>
-          <p>Como docente de Desarrollo Web, enseño desde los fundamentos del diseño y la estructura de sitios web hasta la implementación de proyectos funcionales y responsivos. Trabajo con tecnologías clave como HTML, CSS, SASS, Bootstrap, Flexbox, Grid, y el uso de Git y GitHub para el control de versiones y la colaboración en equipo.
-
-Guío a los estudiantes a través de buenas prácticas de maquetado, accesibilidad, estructura semántica, optimización para SEO y adaptabilidad a múltiples dispositivos. También abordo la conexión con servidores, despliegue de sitios web y flujo de trabajo profesional.
-
-Además de dictar clases y acompañar a tutores, realizo las correcciones de los trabajos integradores, donde los estudiantes desarrollan un sitio web completo aplicando los conocimientos adquiridos. También creo materiales educativos como presentaciones, PDFs, videos y desafíos prácticos, siempre orientados a que los estudiantes desarrollen autonomía y preparación para el entorno laboral real.</p>
-          <span class="date">2021 - Actualidad</span>
+          <span class="tag exp">EXPERIENCE</span>
+          <h4>Python Instructor - Codo a Codo</h4>
+          <p>I teach introductory programming, developing educational materials and delivering classes focused on programming logic, PSeInt, Python, Git, GitHub, databases, and SQL, guiding students toward practical problem-solving skills.</p>
+          <span class="date">2022 - 2023</span>
         </div>
       </div>
 
       <!-- ITEM 8 -->
-      <div class="timeline-item right">
+      <div class="timeline-item right" data-aos="fade-left">
         <div class="timeline-content">
-          <span class="tag edu">EDUCACIÓN</span>
-          <h4>Técnicatura en Desarrollo Web</h4>
-          <p>Universidad de la Matanza</p>
+          <span class="tag edu">EDUCATION</span>
+          <h4>Web Development Degree</h4>
+          <p>University of La Matanza</p>
           <span class="date">2020 - 2022</span>
         </div>
       </div>
 
       <!-- ITEM 9 -->
-      <div class="timeline-item left">
+      <div class="timeline-item left" data-aos="fade-right">
         <div class="timeline-content">
-          <span class="tag exp">EXPERIENCIA</span>
-          <h4>Profesor de Desarrollo Web / Contenedista - Numen Academy</h4>
-          <p>En Numen Academia, imparto clases online de desarrollo web, enseñando HTML, CSS, SASS, Bootstrap, Git y GitHub. Creo materiales didácticos completos como presentaciones, videos y PDFs, superviso tutores y realizo la corrección de tareas para asegurar el aprendizaje y la práctica efectiva.
-          Creador del curso Frontend
+          <span class="tag exp">EXPERIENCE</span>
+          <h4>Web Development / Content Instructor - Numen Academy</h4>
+          <p>At Numen Academy, I teach online web development classes covering HTML, CSS, SASS, Bootstrap, Git, and GitHub. I create educational materials such as presentations, videos, and PDFs, supervise tutors, and evaluate assignments to ensure effective learning and practice.
+          Frontend course creator
           </p>
           <span class="date">2020 - 2023</span>
         </div>
       </div>
 
       <!-- ITEM 10 -->
-      <div class="timeline-item right">
+      <div class="timeline-item right" data-aos="fade-left">
         <div class="timeline-content">
-          <span class="tag edu">EDUCACIÓN</span>
-          <h4>Curso de Diseño e Impresión 3D - SolidWords</h4>
-          <p>Centro de formación Profesional 404</p>
+          <span class="tag edu">EDUCATION</span>
+          <h4>3D Design and Printing Course - SolidWorks</h4>
+          <p>Vocational Training Center 404</p>
           <span class="date">2020</span>
         </div>
       </div>
 
       <!-- ITEM 11 -->
-      <div class="timeline-item right">
+      <div class="timeline-item right" data-aos="fade-left">
         <div class="timeline-content">
-          <span class="tag edu">EDUCACIÓN</span>
-          <h4>Curso de Diseño Grafico - Photoshop e Illustrator</h4>
-          <p>Centro de formación Profesional 404</p>
+          <span class="tag edu">EDUCATION</span>
+          <h4>Graphic Design Course - Photoshop & Illustrator</h4>
+          <p>Vocational Training Center 404</p>
           <span class="date">2020</span>
         </div>
       </div>
 
       <!-- ITEM 12 -->
-      <div class="timeline-item right">
+      <div class="timeline-item right" data-aos="fade-left">
         <div class="timeline-content">
-          <span class="tag edu">EDUCACIÓN</span>
-          <h4>Instalación y soporte de sistemas informáticos</h4>
-          <p>Centro de formación Profesional 404</p>
+          <span class="tag edu">EDUCATION</span>
+          <h4>Computer Systems Installation and Support</h4>
+          <p>Vocational Training Center 404</p>
           <span class="date">2019</span>
         </div>
       </div>
 
       <!-- ITEM 13 -->
-      <div class="timeline-item right">
+      <div class="timeline-item right" data-aos="fade-left">
         <div class="timeline-content">
-          <span class="tag edu">EDUCACIÓN</span>
-          <h4>Instalación, administración y supervisión de redes</h4>
-          <p>Centro de formación Profesional 404</p>
+          <span class="tag edu">EDUCATION</span>
+          <h4>Network Installation, Administration and Supervision</h4>
+          <p>Vocational Training Center 404</p>
           <span class="date">2019</span>
         </div>
       </div>
 
       <!-- ITEM 14 -->
-      <div class="timeline-item left">
+      <div class="timeline-item left" data-aos="fade-right">
         <div class="timeline-content">
-          <span class="tag exp">EXPERIENCIA</span>
-          <h4>Profesor de Desarrollo web</h4>
-          <p>Enseño a maquetar sitios webs con las tecnologias de html y css desde cero
-          </p>
+          <span class="tag exp">EXPERIENCE</span>
+          <h4>Web Development Instructor</h4>
+          <p>I teach how to build websites from scratch using HTML and CSS.</p>
           <span class="date">2018 - 2021</span>
         </div>
       </div>
 
       <!-- ITEM 15 -->
-      <div class="timeline-item right">
+      <div class="timeline-item right" data-aos="fade-left">
         <div class="timeline-content">
-          <span class="tag edu">EDUCACIÓN</span>
-          <h4>Montador Electricista</h4>
-          <p>Centro de formación Profesional 402</p>
+          <span class="tag edu">EDUCATION</span>
+          <h4>Electrician Technician</h4>
+          <p>Vocational Training Center 402</p>
           <span class="date">2018</span>
         </div>
       </div>
 
       <!-- ITEM 16 -->
-      <div class="timeline-item right">
+      <div class="timeline-item right" data-aos="fade-left">
         <div class="timeline-content">
-          <span class="tag edu">EDUCACIÓN</span>
-          <h4>Operador de Pc - Paquete Office</h4>
-          <p>Centro de formación Profesional 402</p>
+          <span class="tag edu">EDUCATION</span>
+          <h4>PC Operator - Office Suite</h4>
+          <p>Vocational Training Center 402</p>
           <span class="date">2018</span>
         </div>
       </div>
 
       <!-- ITEM 17 -->
-      <div class="timeline-item right">
+      <div class="timeline-item right" data-aos="fade-left">
         <div class="timeline-content">
-          <span class="tag edu">EDUCACIÓN</span>
-          <h4>Curso Full Stack - UTN</h4>
-          <p>HTML, CSS, JavaScript, React, PHP, MySQL y deployment.</p>
+          <span class="tag edu">EDUCATION</span>
+          <h4>Full Stack Course - UTN</h4>
+          <p>HTML, CSS, JavaScript, React, PHP, MySQL and deployment.</p>
           <span class="date">2018</span>
         </div>
       </div>
 
       <!-- ITEM 18 -->
-      <div class="timeline-item left">
+      <div class="timeline-item left" data-aos="fade-right">
         <div class="timeline-content">
-          <span class="tag exp">EXPERIENCIA</span>
-          <h4>Soporte Técnico de PC</h4>
-          <p>Brindo soporte técnico en armado y reparación de PC, instalación y mantenimiento de sistemas operativos, restauración, antivirus, limpieza, gestión de programas, backups, y soporte remoto y presencial, asegurando el funcionamiento óptimo de los equipos. Venta de insumos tecnologicos
-          </p>
+          <span class="tag exp">EXPERIENCE</span>
+          <h4>Technical PC Support</h4>
+          <p>I provide technical support for PC assembly and repair, OS installation and maintenance, system restoration, antivirus, cleaning, software management, backups, and remote/on-site support, ensuring optimal equipment performance. Technology sales.</p>
           <span class="date">2016 - 2022</span>
         </div>
       </div>
 
       <!-- ITEM 19 -->
-      <div class="timeline-item left">
+      <div class="timeline-item left" data-aos="fade-right">
         <div class="timeline-content">
-          <span class="tag exp">EXPERIENCIA</span>
-          <h4>Desarrollador Web Freelance</h4>
-          <p>Brindo soporte técnico en armado y reparación de PC, instalación y mantenimiento de sistemas operativos, restauración, antivirus, limpieza, gestión de programas, backups, y soporte remoto y presencial, asegurando el funcionamiento óptimo de los equipos. Venta de insumos tecnologicos
-          </p>
+          <span class="tag exp">EXPERIENCE</span>
+          <h4>Freelance Web Developer</h4>
+          <p>I provide technical support for PC assembly and repair, OS installation and maintenance, system restoration, antivirus, cleaning, software management, backups, and remote/on-site support, ensuring optimal equipment performance. Technology sales.</p>
           <span class="date">2016 - 2022</span>
         </div>
       </div>
 
       <!-- ITEM 20 -->
-      <div class="timeline-item right">
+      <div class="timeline-item right" data-aos="fade-left">
         <div class="timeline-content">
-          <span class="tag edu">EDUCACIÓN</span>
-          <h4>Curso de Inglés</h4>
+          <span class="tag edu">EDUCATION</span>
+          <h4>English Course</h4>
           <p>OM Personal / EFset</p>
           <span class="date">2012</span>
         </div>
       </div>
-      
+
       <!-- ITEM 21 -->
-      <div class="timeline-item right">
+      <div class="timeline-item right" data-aos="fade-left">
         <div class="timeline-content">
-          <span class="tag edu">EDUCACIÓN</span>
-          <h4>Analista de Sistemas</h4>
-          <p>Instituto de Formación Técnica y Docente N° 172</p>
+          <span class="tag edu">EDUCATION</span>
+          <h4>Systems Analyst</h4>
+          <p>Technical and Teaching Institute No. 172</p>
           <span class="date">2012 - 2014</span>
         </div>
       </div>
-
 
     </div>
 
   </div>
 
 </section>
-
 <!--------------------------------- TIMELINE FIN ------------------------------------->
 
 <!--------------------------------- HITOS INICIA ------------------------------------->
@@ -798,41 +801,41 @@ Además de dictar clases y acompañar a tutores, realizo las correcciones de los
   <div class="stats-wrapper">
 
     <div class="stats-header">
-      <h3>IMPACTO</h3>
-      <h2>Mis <span>Hitos</span></h2>
-      <p>Algunos números que representan mi recorrido profesional</p>
+      <h3>IMPACT</h3>
+      <h2>My <span>Milestones</span></h2>
+      <p>Some numbers that represent my professional journey</p>
     </div>
 
     <div class="stats-grid">
 
-      <div class="stat-card">
+      <div class="stat-card" data-aos="zoom-in">
         <h3 class="counter" data-target="10">0</h3>
-        <span>Años de experiencia</span>
+        <span>Years of experience</span>
       </div>
 
-      <div class="stat-card">
+      <div class="stat-card" data-aos="zoom-in">
         <h3 class="counter" data-target="70">0</h3>
-        <span>Cursos dictados</span>
+        <span>Courses taught</span>
       </div>
 
-      <div class="stat-card">
+      <div class="stat-card" data-aos="zoom-in">
         <h3 class="counter" data-target="7000">0</h3>
-        <span>Alumnos formados</span>
+        <span>Students trained</span>
       </div>
 
-      <div class="stat-card">
+      <div class="stat-card" data-aos="zoom-in">
         <h3 class="counter" data-target="40">0</h3>
-        <span>Proyectos realizados</span>
+        <span>Projects completed</span>
       </div>
 
-      <div class="stat-card">
+      <div class="stat-card" data-aos="zoom-in">
         <h3 class="counter" data-target="15">0</h3>
-        <span>Tecnologías dominadas</span>
+        <span>Technologies mastered</span>
       </div>
 
-      <div class="stat-card">
+      <div class="stat-card" data-aos="zoom-in">
         <h3 class="counter" data-target="30">0</h3>
-        <span>Workshops realizados</span>
+        <span>Workshops delivered</span>
       </div>
 
     </div>
@@ -852,32 +855,32 @@ Además de dictar clases y acompañar a tutores, realizo las correcciones de los
 
       <!-- ABOUT -->
       <div class="footer-box">
-        <h3>Sobre mí</h3>
+        <h3>About Me</h3>
         <p>
-          Desarrollador Full Stack enfocado en crear experiencias web modernas,
-          rápidas y escalables con fuerte enfoque en UI/UX.
+          Full Stack Developer focused on creating modern, fast, and scalable web experiences
+          with a strong emphasis on UI/UX.
         </p>
       </div>
 
       <!-- LINKS -->
       <div class="footer-box">
-        <h3>Enlaces</h3>
-        <a href="#about">Acerca de mí</a>
-        <a href="#stack">Tecnologías</a>
-        <a href="#portfolio">Proyectos</a>
-        <a href="#timeline">Experiencia</a>
+        <h3>Links</h3>
+        <a href="#about">About Me</a>
+        <a href="#stack">Technologies</a>
+        <a href="#portfolio">Projects</a>
+        <a href="#timeline">Experience</a>
       </div>
 
       <!-- CONTACT -->
-      <div class="footer-box">
-        <h3>Contacto</h3>
+      <div class="footer-box" id="contacto">
+        <h3>Contact</h3>
         <p>Email: 11.emanuel.cabral@gmail.com</p>
-        <p>Ubicación: Argentina</p>
+        <p>Location: Argentina</p>
       </div>
 
       <!-- SOCIAL -->
       <div class="footer-box">
-        <h3>Redes</h3>
+        <h3>Social</h3>
 
         <div class="socials">
 
@@ -900,10 +903,10 @@ Además de dictar clases y acompañar a tutores, realizo las correcciones de los
     <!-- CTA FINAL -->
     <div class="footer-bottom">
 
-      <h2>¿Tienes un proyecto en mente?</h2>
-      <a href="https://www.linkedin.com/in/emanuelcabral11/" class="footer-btn">Hablemos</a>
+      <h2>Got a project in mind?</h2>
+      <a href="https://www.linkedin.com/in/emanuelcabral11/" class="footer-btn">Let’s talk</a>
 
-      <p>© 2026 - Todos los derechos reservados</p>
+      <p>© 2026 - All rights reserved</p>
 
     </div>
 
@@ -980,6 +983,10 @@ counters.forEach(counter => {
 <!--------------------------------- SCRIPT ANIMACION DE TEXTO FIN -------------------------->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 
 </body>
 </html>

@@ -11,6 +11,7 @@
 body{
     font-family: "Poppins", sans-serif;
     line-height: 1.6;
+    overflow-x: clip;
 }
 
 /* -------------------- BANNER -------------------- */
@@ -46,12 +47,69 @@ h1{
     font-weight: bold;
 }
 
-.nav-link{
-    color: #fff !important;
+#redes{
+    display: flex;
+}
+.redes-bar{
+    font-family: fantasy;
+    line-height: 40px;
+    font-weight: bold;
 }
 
-.nav-link i{
+.nav-link {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: 0.3s ease;
+}
+
+/* línea base (invisible) */
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: rgb(4,134,241);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 10px rgb(4,134,241);
+}
+
+/* hover */
+.nav-link:hover {
+    color: rgb(4,134,241);
+}
+
+/* animación línea */
+.nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+
+
+.nav-link span{
     color: #333;
+}
+
+
+
+
+/* Mobile → cuando aparece hamburguesa */
+@media (max-width: 1200px) {
+
+    .navbar-toggler:focus {
+        box-shadow: none !important;
+    }
+
+    #collapsibleNavbar{
+        background-color: #333;
+        z-index: 99;
+    }
 }
 
 /* -------------------- IDIOMAS -------------------- */
@@ -128,7 +186,7 @@ h1{
     padding: 120px 20px;
     display: flex;
     justify-content: center;
-    background-color: #333;
+    background-color: #111;
 }
 .about p{
     color: #fff;
@@ -351,13 +409,6 @@ h1{
     box-shadow: 0 10px 25px rgba(4,134,241,0.4);
 }
 
-
-
-
-
-
-
-
 /* -------------------- TECH SECTION -------------------- */
 .tech{
     padding: 120px 20px;
@@ -493,16 +544,6 @@ h1{
     }
 }
 
-
-
-
-
-
-
-
-
-
-
 /* -------------------- PORTFOLIO -------------------- */
 .portfolio{
     padding: 120px 20px;
@@ -626,14 +667,6 @@ h1{
         height: 200px;
     }
 }
-
-
-
-
-
-
-
-
 
 /* -------------------- ABOUT ME -------------------- */
 .about-me{
@@ -774,19 +807,6 @@ h1{
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* -------------------- TESTIMONIALS -------------------- */
 .testimonials{
     padding: 120px 20px;
@@ -895,14 +915,6 @@ h1{
         font-size: 30px;
     }
 }
-
-
-
-
-
-
-
-
 
 /* -------------------- TIMELINE SECTION -------------------- */
 .timeline-section{
@@ -1074,15 +1086,6 @@ h1{
     }
 }
 
-
-
-
-
-
-
-
-
-
 /* -------------------- STATS SECTION -------------------- */
 .stats{
     padding: 120px 20px;
@@ -1164,6 +1167,10 @@ h1{
     box-shadow: 0 10px 25px rgba(4,134,241,0.4);
 }
 
+
+
+
+
 /* RESPONSIVE */
 @media(max-width: 992px){
     .stats-grid{
@@ -1180,13 +1187,6 @@ h1{
         font-size: 30px;
     }
 }
-
-
-
-
-
-
-
 
 /* -------------------- FOOTER -------------------- */
 .footer{
@@ -1322,13 +1322,26 @@ h1{
     .footer-bottom h2{
         font-size: 22px;
     }
+
+    .call img{
+        order:1;
+    }
+
+    .call .call-left{
+        order: 2;
+        text-align: center;
+    }
+    .call .call-left a{
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+    }
+
+    .call .col-sm-6:last-child {
+    display: flex;
+    justify-content: center;
 }
-
-
-
-
-
-
+}
 
 
     #text::after {
@@ -1342,33 +1355,39 @@ h1{
     }
 
 
-
-
-
-
-
+/* boton subir inicia */
 #subir {
     position: fixed;
     right: 40px;
     bottom: 40px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  background: #0A66C2;
-  color: white;
-  text-decoration: none;
-  border-radius: 50%;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-  transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background: #0A66C2;
+    color: white;
+    text-decoration: none;
+    border-radius: 50%;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    transition: all 0.2s ease;
+    z-index: 99999;
+     pointer-events: auto;
+}
+
+[data-aos] {
+    transform: none !important;
 }
 
 #subir:hover {
-  background: #084a8f;
-  transform: translateY(-2px);
+    background: #084a8f;
+    transform: translateY(-2px);
 }
 
 #subir i{
-  font-size: 18px;
+    font-size: 18px;
 }
+/* boton subir fin */
+
+
+
