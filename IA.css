@@ -1445,29 +1445,23 @@ body {
 }
 
 .song-icon {
-
     width: 60px;
     height: 60px;
-
     border-radius: 18px;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     background:
         linear-gradient(
             135deg,
             rgba(4,134,241,0.18),
             rgba(0,255,127,0.15)
         );
-
     border:
         1px solid rgba(255,255,255,0.08);
-
     color: rgb(4, 134, 241);
-
     font-size: 1.3rem;
+    margin-bottom: -15px;
 
 }
 
