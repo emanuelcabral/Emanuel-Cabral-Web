@@ -1809,3 +1809,79 @@ video::-webkit-media-controls-panel {
     z-index: 9999;
 }
 
+
+/* upscaler inicia */
+/* Tarjeta general */
+.upscaler-card {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Contenedor comparativo */
+.compare-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+/* Imágenes */
+.compare img {
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* transition: clip-path 0.2s ease; */
+}
+
+/* Imagen antes */
+.compare-before {
+  clip-path: inset(0 50% 0 0);
+}
+
+/* Imagen después */
+.compare-after {
+  clip-path: inset(0 0 0 50%);
+}
+
+/* Línea divisoria */
+.slider-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  pointer-events: none;
+  z-index: 999999999999;
+}
+
+/* Slider */
+.slider {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  appearance: none;
+  height: 4px;
+  background: rgba(255,255,255,0.5);
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+  z-index: 99999999999999999999999999;
+}
+
+.slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  z-index: 99999999999999999999999999;
+}
+
+/* upscaler fin */

@@ -403,6 +403,46 @@ window.addEventListener('load', () => {
 });
 
 // ===============================
+// upscaler
+// ===============================
+
+// Comparador interactivo
+document.querySelectorAll('.compare').forEach(compare => {
+  const before = compare.querySelector('.compare-before');
+  const after = compare.querySelector('.compare-after');
+  const line = compare.querySelector('.slider-line');
+  const slider = compare.querySelector('.slider');
+
+  // Inicializa posición
+  const updateCompare = value => {
+    before.style.clipPath = `inset(0 ${100 - value}% 0 0)`;
+    after.style.clipPath = `inset(0 0 0 ${value}%)`;
+    line.style.left = `${value}%`;
+  };
+
+  // Movimiento con el slider
+  slider.addEventListener('input', e => {
+    updateCompare(e.target.value);
+  });
+
+  // Movimiento con el mouse (arrastre directo sobre la imagen)
+  compare.addEventListener('mousemove', e => {
+    const rect = compare.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const value = Math.min(Math.max((x / rect.width) * 100, 0), 100);
+    updateCompare(value);
+    slider.value = value;
+  });
+
+  // Evita que se quede fijo al salir del área
+  compare.addEventListener('mouseleave', () => {
+    updateCompare(slider.value);
+  });
+});
+
+
+
+// ===============================
 // CONSOLE SIGNATURE
 // ===============================
 
